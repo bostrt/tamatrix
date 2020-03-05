@@ -1,6 +1,8 @@
 FROM ubuntu
 MAINTAINER Greyson Parrelli <greyson.parrelli@gmail.com>
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 # Install required packages
 RUN apt-get update && apt-get install -y \
   apache2 \
